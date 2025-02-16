@@ -1,0 +1,39 @@
+{% extends './template.html' %}
+{% block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">{% endblock %}
+{% block body %}
+
+<header>
+    <div class="menu_container">
+        <div class="title">
+            <p>My Portfolio</p>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">My Contact</a></li>
+                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#">My Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="cover_container">
+        <div class="cover">
+            <div class="text">
+                <h1>Hi, my name is Cristian Alejandro!</h1>
+                <p>And I am an Informatic Ingeneer looking for an approach related to the use of programming languages 
+                    ​ ​and solving problems through logic and teamwork.</p>
+                <input type="button" name="" id="" value="More About Me">
+            </div>
+            <div class="img_decorator">
+                <img src="{{ url_for('static', filename='images/profile.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

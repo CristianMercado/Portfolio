@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    background: #EAE6E5;
+    border-radius: 0% 0% 5% 5%;
+}
+
+.menu_container{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 38px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #12130F;
+}
+
+.menu a:hover{
+    color: #8F8073;
+}
+
+.cover_container{
+    width: 100%;
+    height: 775px;
+    background-image: url(../images/img1.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.cover {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover_container .text{
+    max-width: 400px;
+}
+
+.cover_container .text h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.cover_container .text p{
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.cover_container .text input{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: #8F8073;
+    color: #12130F;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px;
+    transition: all 300ms;
+}
+
+.cover_container .text input:hover{
+    box-shadow: 1px 1px 30px -6px;
+}
+
+.cover_container .img_decorator img{
+    width: 80%;
+    animation: move-vector 3s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes move-vector {
+    0%{
+        transform: translateY(15px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(15px);
+    }
+}
