@@ -3,7 +3,7 @@
 {% block body %}
 
 <header>
-    <div class="menu_container">
+    <div class="menu_container" id="menu_container">
         <div class="title">
             <p>My Portfolio</p>
         </div>
@@ -11,7 +11,7 @@
             <nav>
                 <ul>
                     <li><a href="#">My Profile</a></li>
-                    <li><a href="#">My Contact</a></li>
+                    <li><a href="#about_container">My Contact</a></li>
                     <li><a href="#">My Projects</a></li>
                     <li><a href="#">My Education</a></li>
                 </ul>
@@ -21,19 +21,52 @@
 </header>
 
 <main>
-    <div class="cover_container">
+    <div class="cover_container" id="cover_container">
         <div class="cover">
             <div class="text">
                 <h1>Hi, my name is Cristian Alejandro!</h1>
                 <p>And I am an Informatic Ingeneer looking for an approach related to the use of programming languages 
                     ​ ​and solving problems through logic and teamwork.</p>
-                <input type="button" name="" id="" value="More About Me">
+                <a href="#about_container">More About Me</a>
             </div>
             <div class="img_decorator">
-                <img src="{{ url_for('static', filename='images/profile.jpg')}}" alt="">
+                <img src="{{ url_for('static', filename='images/profile.jpg')}}" alt="profile">
             </div>
         </div>
     </div>
 </main>
+
+<section name="about_me">
+    <div class="about_container" id="about_container">
+        <div class="title_about">
+            <h1>About Me</h1>
+            <p>Cristian Alejandro Mercado Torres</p>
+        </div>
+        <div class="summary_container">
+            <div class="actual_job">
+                <h1>Last / Actual Job</h1>
+                <p>IBM Power Systems Test Analizer with 2 and a half years of experience 
+                    working with a wide variety of servers in order to carry out the necessary tests and resolve any problems found, 
+                    from the hardware part where I am able to manipulate electronic components to the software part where I analyze, 
+                    verify and solve problems using Linux commands through a remote connection. </p>
+                <div class="img_job">
+                    <img src="{{ url_for('static', filename='images/job.jpg')}}" alt="job">
+                </div>
+            </div>
+            <div class="degree">
+                <h1>Enginneer Degree</h1>
+                <p>Informatic engineering from "Centro Universitario de Ciencias Exactas e Ingenierías" (CUCEI) where I obtained 
+                    knowledge about programming bases, algorithms, data structures, networks and documentation to use them to solve everyday problems 
+                    and in more complex topics such as Data Science, Data Warehouse and Software development.</p>
+                <div class="img_degree">
+                    <img src="{{ url_for('static', filename='images/degree.png')}}" alt="degree">
+                </div>
+            </div>
+        </div>
+        <div class="cv">
+            <a href="{{ url_for('cv')}}">Watch my Full CV</a>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

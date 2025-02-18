@@ -85,9 +85,10 @@ header{
     font-size: 18px;
     margin-top: 40px;
     text-align: left;
+    margin-bottom: 40px;
 }
 
-.cover_container .text input{
+.cover_container .text a{
     padding: 18px 80px;
     border: none;
     font-size: 16px;
@@ -98,9 +99,10 @@ header{
     cursor: pointer;
     box-shadow: 1px 1px 30px -12px;
     transition: all 300ms;
+    text-decoration: none;
 }
 
-.cover_container .text input:hover{
+.cover_container .text a:hover{
     box-shadow: 1px 1px 30px -6px;
 }
 
@@ -118,4 +120,79 @@ header{
     }100%{
         transform: translateY(15px);
     }
+}
+
+.about_container {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/img2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title_about {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.summary_container {
+    display: flex;
+    padding: 0px 200px;
+    text-align: justify;
+}
+
+.actual_job {
+    width: 50%;
+    padding-right: 20px;
+    margin: 50px;
+}
+
+.actual_job h1 {
+    text-align: center;
+}
+
+.degree {
+    width: 50%;
+    padding-left: 20px;
+    margin: 50px;
+}
+
+.degree h1 {
+    text-align: center;
+}
+
+.img_job img{
+    width: 70%;
+    padding-left: 130px;
+    padding-top: 50px;
+}
+
+.img_degree img{
+    height: 200px;
+    padding-left: 160px;
+    padding-top: 30px;
+}
+
+.cv {
+    text-align: center;
+}
+
+.cv a{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: #5B9279;
+    color: #EAE6E5;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+.cv a:hover {
+    box-shadow: 1px 1px 30px -6px;
 }
