@@ -196,3 +196,68 @@ header{
 .cv a:hover {
     box-shadow: 1px 1px 30px -6px;
 }
+
+.cv_section {
+    width: 100%;
+    height: 775px;
+    background-image: url(../images/img3.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pdf_container {
+    width: 100%;
+    height: 90%;
+}
+
+.pdf {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+}
+
+.button_cv {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.button_cv a{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: #e7c6ff;
+    color: #12130F;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px;
+    transition: all 300ms;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button_cv a:hover {
+    box-shadow: 1px 1px 30px -6px;
+}
+
+.projects_container {
+    width: 100%;
+    height: 725px;
+    background-image: url(../images/img4.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title_projects {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.myprojects{
+    display: flex;
+    text-align: center;
+    padding: 200px 10px 10px 300px;
+}

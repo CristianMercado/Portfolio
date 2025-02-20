@@ -1,5 +1,13 @@
 {% extends './template.html' %}
 {% block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">{% endblock %}
 {% block body %}
-<p>CV</p>
+<div class="cv_section">
+    <div class="pdf_container">
+        <embed class="pdf" src="{{ url_for('static', filename='files/CV.pdf')}}" width="1520px" height="600px">
+    </div>
+    <div class="button_cv">
+        <a href="{{ url_for('homepage') }}">Return</a>
+    </div>
+</div>
+
 {% endblock %}
