@@ -261,3 +261,11 @@ header{
     text-align: center;
     padding: 200px 10px 10px 300px;
 }
+
+.myprojects img{
+    width: 20%;
+}
+
+.myprojects a:hover{
+    box-shadow: 1px 1px 30px -6px;
+}

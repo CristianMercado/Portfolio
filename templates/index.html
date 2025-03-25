@@ -12,7 +12,7 @@
                 <ul>
                     <li><a href="#">My Profile</a></li>
                     <li><a href="#about_container">My Contact</a></li>
-                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#projects_container">My Projects</a></li>
                     <li><a href="#">My Education</a></li>
                 </ul>
             </nav>
@@ -70,7 +70,7 @@
 </section>
 
 <section name="projects">
-    <div class="projects_container">
+    <div class="projects_container" id="projects_container">
         <div class="title_projects">
             <h1>My Projects</h1>
         </div>
@@ -78,16 +78,25 @@
             <div class="project1">
                 <video src="" autoplay="true"></video>
                 <h2>Logos Connection</h2>
+                <a href="https://github.com/CristianMercado/logos_connection" target="_blank"><img src="{{ url_for('static', filename='images/github.png')}}" alt="Github"></a>
             </div>
             <div class="project2">
                 <video src="" autoplay="true"></video>
                 <h2>My Portfolio</h2>
+                <a href="https://github.com/CristianMercado/Portfolio" target="_blank"><img src="{{ url_for('static', filename='images/github.png')}}" alt="Github"></a>
             </div>
             <div class="project3">
                 <video src="" autoplay="true"></video>
                 <h2>Pomodoro</h2>
+                <a href="https://github.com/CristianMercado/Pomodoro"target="_blank"><img src="{{ url_for('static', filename='images/github.png')}}" alt="Github"></a>
             </div>
         </div>
+    </div>
+</section>
+
+<section name="education">
+    <div class="education_container">
+        
     </div>
 </section>
 
