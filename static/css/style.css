@@ -187,6 +187,7 @@ body {
 
 .presentation{
     text-align: center;
+    font-size: 1vw;
 }
 
 .presentation h1 {
@@ -226,14 +227,16 @@ body {
 
 .section{
     width: 50%;
+    font-size: 1vw;
 }
 
 .section p {
     margin: 0;
+    padding-top: 1vw;
 }
 
 .section h2 {
-    margin-top: 5%;
+    margin-top: 0;
 }
 
 .about_me2 {
