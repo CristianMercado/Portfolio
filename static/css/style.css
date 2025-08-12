@@ -1,15 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:gainsboro;
+    background: linear-gradient(-45deg, #93C5FD, #BFDBFE, #E5E7EB, #E6EEF6);
+    animation: moveGradient 15s ease infinite;
+    background-size: 400% 400%;
     font-family: "Nunito", sans-serif; 
     display: flex;
+    height: 100vh;
 }
+
 
 /* CV Section (Left Side) */
 
 .cv_container{
-    background-color: white;
+    background-color: #F3F4F6;
     height: 100vh;
     width: 15%;
     display: flex;
@@ -172,13 +176,14 @@ body {
 }
 
 .about_me_summary {
-    background-color: white;
-    height: 25%;
+    background-color: #F3F4F6;
+    height: 22%;
     border-bottom-left-radius: .6vw;
     border-bottom-right-radius: .6vw;
     padding-top: .5vw;
     animation: transitionUp 2s;
     transition: transform 0.3s ease;
+    padding: 1vw;
 }
 
 .about_me_summary:hover {
@@ -198,6 +203,7 @@ body {
     height: 70%;
     display: flex;
     flex-direction: column;
+    margin-top: 1vw;
 }
 
 .about_me1 {
@@ -232,7 +238,6 @@ body {
 
 .section p {
     margin: 0;
-    padding-top: 1vw;
 }
 
 .section h2 {
@@ -247,7 +252,7 @@ body {
 
 .description {
     width: 100%;
-    background-color: white;
+    background-color: #F3F4F6;
     border-radius: 1vh;
     padding: 1vw;
     height: 50%;
@@ -288,6 +293,106 @@ body {
     transform: scale(1.05);
 }
 
+/* Work Section */
+
+.work_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_title {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+}
+
+.work_title img {
+    width: 5vw;
+    height: 5vw;
+    transition: transform 0.3s ease;
+}
+
+.work_title img:hover {
+    transform: scale(1.1);
+}
+
+.work_details {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+}
+
+.work_details div {
+    width: 45%;
+    font-size: .9vw;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    transition: transform 0.3s ease;
+}
+
+.work_details div:hover {
+    transform: scale(1.05);
+}
+
+.work_description {
+    width: 80%;
+    height: 60%;
+    background-color: #F3F4F6;
+    text-align: center;
+    border-radius: 1vw;
+    animation: transitionUp 1s;
+}
+
+.work_description h1 {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.work_container h3 {
+    font-size: 1vw;
+    margin-top: 0;
+}
+
+.work_img {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25%;
+    animation: transitionLeft 1s;
+}
+
+.work_img img {
+    width: 20%;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.work_img img:hover {
+    transform: scale(1.1);
+}
+
+.button_back {
+    width: 5%;
+    height: 10%;
+    margin-top: 1vw;
+    animation: transitionDown 1s;
+}
+
+.button_back img {
+    width: 100%;
+    height: 100%;
+}
+
+.button_back img:hover {
+    filter: invert(1);
+}
+
 @keyframes transitionLeft {
     from {
         opacity: 0;
@@ -324,4 +429,10 @@ body {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
