@@ -328,9 +328,11 @@ body {
 
 .work_details div {
     width: 45%;
+    height: 90%;
     font-size: .9vw;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 1vw;
+    padding: 1vw;
     transition: transform 0.3s ease;
 }
 
@@ -391,6 +393,110 @@ body {
 
 .button_back img:hover {
     filter: invert(1);
+}
+
+/* Project Section */
+
+.project_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_title {
+    background-color: #F3F4F6;
+    width: 30%;
+    text-align: center;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    animation: transitionUp 1s;
+    transition: transform 0.3s ease;
+    font-size: 1vw;
+}
+
+.project_title:hover {
+    transform: scale(1.1);
+}
+
+.project_content {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F3F4F6;
+    margin-top: 2vw;
+    border-radius: 1vw;
+}
+
+.project_info {
+    width: 50%;
+    height: 80%;
+    background-color: #F3F4F6;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    animation: transitionLeft 2s;
+    transition: transform 0.3s ease;
+    font-size: 1vw;
+    padding: 1vw;
+}
+
+.project_info:hover {
+    transform: scale(1.1);
+}
+
+.project_des {
+    height: 70%;
+}
+
+.technologies {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.technologies img {
+    width: 8%;
+}
+
+.project_link {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.project_link a{
+    width: 5%;
+}
+
+.project_link img {
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.project_link img:hover {
+    filter: invert(1);
+}
+
+.project_img {
+    width: 40%;
+}
+
+.project_img img {
+    width: 100%;
+    border-radius: 1vw;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: transitionLeft 2s;
+    transition: transform 0.3s ease;
+}
+
+.project_img img:hover {
+    transform: scale(1.1);
 }
 
 @keyframes transitionLeft {
